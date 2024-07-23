@@ -29,6 +29,10 @@ class _SafetySettings:
             return self._get_settings(name)
         raise AttributeError("Possible settings: off / low / medium / high.")
     
+# normal: call the object
+# safety_settings = _SafetySettings().low  
+
+# better: istanciate the object with a object variable safety_settings
 
 safety_settings = _SafetySettings()
 
